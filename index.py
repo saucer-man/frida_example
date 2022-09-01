@@ -56,7 +56,7 @@ def on_message(message, data):
     else:
         print(f"message: {message}")
 
-jscode = open("index.js").read()
+jscode = open("index.js",encoding="utf-8").read()
 
 device = frida.get_usb_device()
 
@@ -69,8 +69,10 @@ session = device.attach(pid)
 #----------------#
 
 # 2. attach模式注入进程(二选一)
+# frida -U com.xxx.xxx -l index.js
 session = device.attach("com.android.settings")
 #----------------#
+
 
 script = session.create_script(jscode)
 script.on('message',on_message)
