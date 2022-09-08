@@ -9,8 +9,9 @@
 - 打印堆栈：printstack.js
 
 ### 进阶脚本
-- 跟踪某个class或者function，并且打印出参数和返回值：trace_class.js
+- 跟踪某个class或者function，并且打印出参数和返回值：trace_class.js，或者使用安卓Java层多功能追踪脚本 https://github.com/r0ysue/r0tracer
 - hook常见的加解密方法：crypt.js
+
 
 
 ## 参考
