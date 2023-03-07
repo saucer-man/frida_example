@@ -1,5 +1,10 @@
 # frida_example
-
+```
+# 1. spawn模式注入进程
+frida -U -f com.xxx.xxx --no-pause -l index.js
+# 2. attach模式注入进程
+frida -U com.xxx.xxx -l index.js
+```
 ### 基础函数
 
 - python rpc: index.py
